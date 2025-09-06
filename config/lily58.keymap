@@ -34,7 +34,7 @@
 &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp LBKT
 &kp LSHFT &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
 &kp LCTRL &kp Z  &kp X  &kp C    &kp V    &kp B  &kp C_MUTE   &kp CAPS &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp EQUAL
-                        &mo 2 &kp LALT &mt LGUI BSPC  &lt 1 SPACE  &lt 1 SPACE &kp BSPC  &kp RET &kp RALT
+                        &mo 2 &kp LALT &mt LGUI BSPC  &lt 1 SPACE  &lt 2 SPACE &kp BSPC  &kp RET &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN>;
@@ -44,14 +44,14 @@
 // ------------------------------------------------------------------------------------------------------------
 // |  F1   |  F2 |  F3   |   F4   |  F5    |    F6  |           |   *  |    7  |   8   |   9  |   (   |   )   |
 // |  F7   |  F8 |  F9 |  F10  |  F11  |  F12  |                |   /  |    4  |   5   |   6  |   {   |   }   |
-// |       |     |     |      |      |      |                   |   \  |    1  |   2   |   3  |   [   |   ]   |
-// |EXTPWR |     |     |      |      |      |  PLAY  |  |RGB_TOG|  "|" |    0  |   =   |  +   |   <   |   >   |
+// |       |     |     |      |      |      |                   |  "|" |    1  |   2   |   3  |   [   |   ]   |
+// |EXTPWR |     |     |      |      |      |  PLAY  |  |RGB_TOG|  .   |    0  |   =   |  +   |   <   |   >   |
 //                     |      |      | DEL  | ENTER  |  | ENTER | DEL  |       |       |
             bindings = <
-&kp F1   &kp F2    &kp F3    &kp F4    &kp F5   &kp F6                                    &kp STAR    &kp LS(N7)    &kp LS(N8)    &kp LS(N9)    &kp N5    &kp MINUS
-&kp F7   &kp F8    &kp F9    &kp F10   &kp F11  &kp F12                                   &kp DOT    &kp LS(N4)    &kp LS(N5)    &kp LS(N6)   &kp LA(N5)   &kp LA(MINUS)
-&trans   &trans    &trans    &trans    &trans   &trans                                    &kp LA(DOT)   &kp LS(N1)    &kp LS(N2)    &kp LS(N3)  &kp LA(LS(N5))  &kp LA(LS(MINUS))
-&trans   &trans    &trans    &trans    &trans   &trans &kp K_PP        &rgb_ug RGB_TOG    &kp LA(LS(L))    &kp LS(N0)    &kp EQUAL       &kp LS(EQUAL)     &kp GRAVE    &kp LS(GRAVE)
+&kp F1   &kp F2    &kp F3    &kp F4    &kp F5   &kp F6                                    &kp RBRC    &kp LS(N7)    &kp LS(N8)    &kp LS(N9)    &kp N5    &kp MINUS
+&kp F7   &kp F8    &kp F9    &kp F10   &kp F11  &kp F12                                   &kp LS(DOT)    &kp LS(N4)    &kp LS(N5)    &kp LS(N6)   &kp LA(N5)   &kp LA(MINUS)
+&trans   &trans    &trans    &trans    &trans   &trans                                    &kp LS(RA(DOT))   &kp LS(N1)    &kp LS(N2)    &kp LS(N3)  &kp LA(LS(N5))  &kp LA(LS(MINUS))
+&trans   &trans    &trans    &trans    &trans   &trans &kp K_PP        &rgb_ug RGB_TOG    &kp COMMA   &kp LS(N0)    &kp FSLH       &kp LS(FSLH)     &kp GRAVE    &kp LS(GRAVE)
                       &trans     &trans       &kp DEL    &kp RET   &kp RET    &kp DEL    &trans    &trans
             >;
 
